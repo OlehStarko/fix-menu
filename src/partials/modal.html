@@ -1,0 +1,81 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal container">
+    <button class="modal__button" data-modal-close>
+      <svg class="modal__cross" width="14" height="14">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__text">order form</p>
+    <form class="form">
+      <div class="form__user-name">
+        <label class="form__label" for="user_name"
+          ><span class="form__user-text">Name</span></label
+        >
+        <input
+          class="form__input"
+          type="text"
+          name="user-name"
+          id="user_name"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form__email">
+        <label class="form__label" for="user_email"
+          ><span class="form__user-text">Email</span></label
+        >
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          id="user_email"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div class="form__tel">
+        <label class="form__label" for="user_tel"
+          ><span class="form__user-text">Phone</span></label
+        >
+        <input
+          class="form__input"
+          type="tel"
+          name="user-tel"
+          id="user_tel"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <div class="form__comment">
+        <label class="form__label" for="user-comment">
+          <span class="form__item">Comments</span>
+          <textarea
+            class="form__textarea"
+            name="user-comment"
+            placeholder="Enter your comments"
+            id="user-comment"
+          ></textarea>
+        </label>
+      </div>
+      <div class="form__wrap">
+        <input
+          class="form__checkbox form__visually"
+          type="checkbox"
+          name="check"
+          id="check"
+        />
+        <label for="check" class="form__agreement">
+          <span class="form__icon-check">
+            <svg class="form__svg-check">
+              <use href="./images/symbol-defs.svg#icon-check-box"></use>
+            </svg>
+          </span>
+          I agree and accept
+          <a href="" class="accept">the terms of the contract</a>
+        </label>
+      </div>
+      <div class="form__button-wrap">
+        <button class="form__button" type="submit">
+          <span class="form__button-text">Send</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+.section-products {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 59px;
+  }
+}
+.section-products__label {
+  margin-bottom: 15px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section-products__title {
+  margin-bottom: 8px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}

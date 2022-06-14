@@ -1,0 +1,417 @@
+.container--about {
+  max-width: 1280px;
+}
+.about {
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: #fff5f6;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 84px;
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+  &__top-text {
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $bg-color;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+  }
+
+  &__top-title {
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 1.14;
+      margin-bottom: 79px;
+    }
+  }
+  &__content {
+    width: 280px;
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    &::before {
+      content: '';
+      background: url(../images/mobile/milk-mobile-1x.png);
+      width: 320px;
+      height: 133px;
+      position: absolute;
+      left: -20px;
+      top: 390px;
+      z-index: -1;
+      background-repeat: no-repeat;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(/src/images/mobile/milk-mobile-2x.png);
+        background-size: contain;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: center;
+      &::before {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      width: 100%;
+      margin-bottom: 20px;
+      &::before {
+        display: inline;
+        content: '';
+        background: url(../images/desktop/milk-desktop-1x.png);
+        width: 1280;
+        height: 100%;
+        position: absolute;
+        left: -15px;
+        top: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(/src/images/desktop/milk-desktop-2x.png);
+          background-size: contain;
+        }
+      }
+    }
+  }
+  &__picture {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 140px;
+    }
+  }
+
+  &__inform {
+    @media screen and (min-width: 1280px) {
+      padding-top: 72px;
+      padding-bottom: 100px;
+    }
+  }
+  &__second-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $text-black-color;
+    margin-bottom: 20px;
+    width: 220px;
+
+    @media screen and (min-width: 768px) {
+      width: 334px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 463px;
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      margin-bottom: 32px;
+    }
+  }
+  &__second-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $text-grey-color;
+    width: 220px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 334px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 463px;
+      line-height: 1.94;
+      margin-bottom: 32px;
+    }
+  }
+  &__bottom-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $text-grey-color;
+    width: 220px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 334px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 463px;
+      line-height: 1.94;
+    }
+  }
+  &__btn {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: $primary-color;
+    width: 176px;
+    height: 44px;
+    background-color: $secondary-color;
+    border-radius: 22px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: $timing-function;
+    transition-duration: 250ms;
+    &:hover,
+    &:focus {
+      background-color: $button-hover-color;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.31;
+      margin: 0;
+    }
+  }
+  &__icon {
+    position: absolute;
+    right: 37px;
+    top: 18px;
+  }
+}
+
+.about-advantages-list {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    margin-left: -128px;
+  }
+  &__item {
+    &.first {
+      &::before {
+        content: '';
+        background: url(../images/mobile/made-icon-mobile-1-1x.png);
+        width: 33px;
+        height: 50px;
+        display: block;
+        margin-bottom: 16px;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/mobile/made-icon-mobile-1-2x.png);
+          background-size: contain;
+        }
+        @media screen and (min-width: 768px) {
+          background: url(../images/tablet/made-icon-tablet-1-1x.png);
+          margin-bottom: 36px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/tablet/made-icon-tablet-1-2x.png);
+            background-size: contain;
+          }
+        }
+        @media screen and (min-width: 1280px) {
+          background: url(../images/desktop/made-icon-desktop-1-1x.png);
+          margin-bottom: 40px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/desktop/made-icon-desktop-1-2x.png);
+            background-size: contain;
+          }
+        }
+      }
+    }
+    &.second {
+      &::before {
+        content: '';
+        background: url(../images/mobile/made-icon-mobile-2-1x.png);
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 16px;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/mobile/made-icon-mobile-2-2x.png);
+          background-size: contain;
+        }
+        @media screen and (min-width: 768px) {
+          background: url(../images/tablet/made-icon-tablet-2-1x.png);
+          margin-bottom: 36px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/tablet/made-icon-tablet-2-2x.png);
+            background-size: contain;
+          }
+        }
+        @media screen and (min-width: 1280px) {
+          background: url(../images/desktop/made-icon-desktop-2-1x.png);
+          margin-bottom: 40px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/desktop/made-icon-desktop-2-2x.png);
+            background-size: contain;
+          }
+        }
+      }
+    }
+    &.third {
+      &::before {
+        content: '';
+        background: url(../images/mobile/made-icon-mobile-3-1x.png);
+        width: 44px;
+        height: 50px;
+        display: block;
+        margin-bottom: 16px;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/mobile/made-icon-mobile-3-2x.png);
+          background-size: contain;
+        }
+        @media screen and (min-width: 768px) {
+          background: url(../images/tablet/made-icon-tablet-3-1x.png);
+          margin-bottom: 36px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/tablet/made-icon-tablet-3-2x.png);
+            background-size: contain;
+          }
+        }
+        @media screen and (min-width: 1280px) {
+          background: url(../images/desktop/made-icon-desktop-3-1x.png);
+          margin-bottom: 40px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/desktop/made-icon-desktop-3-2x.png);
+            background-size: contain;
+          }
+        }
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% / 3 - 22px));
+      margin-left: 22px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      width: calc((100% / 3 - 128px));
+      margin-left: 128px;
+    }
+  }
+  &__title {
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-color;
+    width: 98px;
+    height: 56px;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      font-family: 'Titan One';
+      font-size: 48px;
+      line-height: 1.46;
+      margin-bottom: 13px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: $text-black-color;
+    width: 230px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.74;
+      width: 159px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+      width: 288px;
+    }
+  }
+}
